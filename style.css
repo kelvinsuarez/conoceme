@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "airstrikeacad";
+  src: url(./fonts/airstrikeacad.ttf) format("truetype"),
+    url(./fonts/PermanentMarker.woff) format("woff");
+}
+@font-face {
+  font-family: "inter";
+  src: url(./fonts/Inter-Regular.otf) format("opentype"),
+    url(./fonts/PermanentMarker.woff) format("woff");
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  font-family: "Inter", sans-serif;
+  background: #eeeeee;
+}
+
+.header {
+  background-image:  url(./images/fondo.jpg);
+  background-size: cover;
+  background-position: center ;
+  height: 100vh;
+  text-align: center;
+}
+
+.header_encabezado {
+  font-family: "airstrikeacad", cursive;
+  font-size: 130px;
+  line-height: 140px;
+  color: rgb(255, 235, 52);
+  text-transform: uppercase;
+  max-width: 1240px;
+  margin: auto;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 790px;
+  margin: 100px auto 50px;
+}
+
+.card {
+  width: 350px;
+  margin-bottom: 60px;
+  padding: 45px 45px 70px;
+  background: #ffffff;
+  box-shadow: 4px 4px 5px rgba(0, 132,255,0.4);
+  height: 990px;
+  position: relative;
+}
+
+.card_small{
+  height: 600px;
+}
+
+.card_imagenes{
+  width: 100%;
+  margin-bottom: 25px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.card_titulos{
+  font-family: "airstrikeacad", cursive;
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+.card_texto{
+  font-size: 16px;
+  color:blue;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.link{
+  text-decoration: none;
+  padding: 2.5px 10px;
+  background-color: gray;
+  color:white;
+  font-style:italic;
+  border-radius: 3%;
+}
+
+.link:hover{
+  z-index: 1;
+  background-color: #000000;
+  color: red;
+  transition: 0.8s;
+  font-size: 17px;
+}
+
+.footer {
+  display: flex;
+  min-height: 300px;
+  background-color: #000000;
+
+}
+
+.footer__text{
+  font-size: 24px;
+  color:#ffffff;
+  margin: auto;
+  text-align: center;
+}
